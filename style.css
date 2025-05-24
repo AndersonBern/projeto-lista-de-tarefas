@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 30px;
+}
+
+header {
+    display:flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+}
+
+#inputAdd {
+    width: 80%;
+    height: 80px;
+    text-indent: 30px;
+    font-size: 2em;
+}
+
+#btnAdd {
+    width: 20%;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+#btnAdd:hover{
+    background-color: rgb(7, 160, 7);
+    color: rgb(214, 214, 214);
+}
+
+main {
+    background-color: lightgray;
+    width: 90%;
+    margin: auto;
+}
+
+.item {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.item-icone {
+    width: 25%;
+    text-align: center;
+}
+
+.item-nome {
+    width: 60%;
+    font-size: 1.4em;
+}
+
+.item-botao {
+    width: 15%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+#btnDelete {
+    height: 100%;
+    background-color: red;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+#btnDelete:hover {
+    background-color: rgb(141, 17, 17);
+    color: gray;
+}
+
+.item.clicado {
+    background-color: rgb(126, 248, 126);
+    color: gray;
+    text-decoration: line-through;
+}
+
+.item.clicado > .item-icone > span {
+    color: green;
+} 
